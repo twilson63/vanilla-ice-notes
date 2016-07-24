@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-ice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wzrd browser.js -- -t es2020"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "es2020": "^1.1.7",
+    "wzrd": "^1.4.0"
+  },
+  "dependencies": {
+    "systemjs": "^0.19.31"
+  }
+}

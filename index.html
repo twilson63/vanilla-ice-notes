@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>vanilla-ice-journal</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    .header {
+      text-align: center;
+      background-color: rgba(0,0,0,.8);
+      color: whitesmoke;
+    }
+
+    header > h2 {
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <header class="twelve columns header">
+    <h1>Vanilla Ice Journal</h1>
+  </header>
+  <main class="row">
+    <section id="articles" class="eight columns">
+      <header>
+        <h2>Articles</h2>
+      </header>
+    </section>
+    <section class="four columns">
+      <header>
+        <h2>New Article</h2>
+      </header>
+      <form>
+        <div class="row">
+          <label for="title">Title</label>
+          <input class="u-full-width" type="text" id="title" name="title">
+        </div>
+        <div class="row">
+          <label for="body">Article</label>
+          <textarea class="u-full-width" id="body" name="body"></textarea>
+        </div>
+        <div class="row">
+          <button class="button-primary u-pull-right">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+    System.defaultJSExtensions = true;
+    System.import('./browser')
+  </script>
+</body>
+</html>
